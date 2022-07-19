@@ -1,0 +1,123 @@
+[
+    {
+      "model": "cardDb.operation",
+      "pk": 1,
+      "fields": {
+        "moneyAmount": "2.00",
+        "operationType": 0,
+        "purpouce": "test input",
+        "card": 1,
+        "date": "2022-07-17T16:08:45.713Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 2,
+      "fields": {
+        "moneyAmount": "2.00",
+        "operationType": 1,
+        "purpouce": "test input",
+        "card": 2,
+        "date": "2022-07-17T16:09:07.309Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 3,
+      "fields": {
+        "moneyAmount": "2.00",
+        "operationType": 1,
+        "purpouce": "test input",
+        "card": 2,
+        "date": "2022-07-17T16:10:46.742Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 4,
+      "fields": {
+        "moneyAmount": "2.00",
+        "operationType": 1,
+        "purpouce": "test input",
+        "card": 4,
+        "date": "2022-07-17T16:30:53.195Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 5,
+      "fields": {
+        "moneyAmount": "2.00",
+        "operationType": 1,
+        "purpouce": "test input",
+        "card": 4,
+        "date": "2022-07-17T16:32:52.495Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 6,
+      "fields": {
+        "moneyAmount": "200.00",
+        "operationType": 0,
+        "purpouce": "Test Ui",
+        "card": 1,
+        "date": "2022-07-19T01:18:57.029Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 7,
+      "fields": {
+        "moneyAmount": "200.00",
+        "operationType": 0,
+        "purpouce": "Test ui",
+        "card": 4,
+        "date": "2022-07-19T01:20:40.050Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 8,
+      "fields": {
+        "moneyAmount": "0.00",
+        "operationType": 0,
+        "purpouce": "",
+        "card": 8,
+        "date": "2022-07-19T07:07:23.667Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 9,
+      "fields": {
+        "moneyAmount": "1.00",
+        "operationType": 0,
+        "purpouce": "",
+        "card": 20,
+        "date": "2022-07-19T07:11:14.900Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 10,
+      "fields": {
+        "moneyAmount": "200.00",
+        "operationType": 0,
+        "purpouce": "Test from ui",
+        "card": 20,
+        "date": "2022-07-19T08:15:04.398Z"
+      }
+    },
+    {
+      "model": "cardDb.operation",
+      "pk": 11,
+      "fields": {
+        "moneyAmount": "10.00",
+        "operationType": 1,
+        "purpouce": "Test ui",
+        "card": 40,
+        "date": "2022-07-19T08:18:16.678Z"
+      }
+    }
+  ]

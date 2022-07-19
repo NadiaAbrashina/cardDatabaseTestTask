@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F8AD221-4FAC-40D2-A750-5B79350B6400}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CardDbFrontend</RootNamespace>
+    <AssemblyName>CardDbFrontend</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Card.Designer.cs">
+      <DependentUpon>Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardGenerate.Designer.cs">
+      <DependentUpon>CardGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardObject.cs" />
+    <Compile Include="CardSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSearch.Designer.cs">
+      <DependentUpon>CardSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSearchQuery.cs" />
+    <Compile Include="CardSearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSearchResults.Designer.cs">
+      <DependentUpon>CardSearchResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsGenerateQuery.cs" />
+    <Compile Include="CardStatusDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardStatusDialog.Designer.cs">
+      <DependentUpon>CardStatusDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogObject.cs" />
+    <Compile Include="LogView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogView.Designer.cs">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationObject.cs" />
+    <Compile Include="OperationsSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperationsSearchResult.Designer.cs">
+      <DependentUpon>OperationsSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerformOperation.Designer.cs">
+      <DependentUpon>PerformOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueriesSignature.cs" />
+    <Compile Include="StatusEnums.cs" />
+    <EmbeddedResource Include="Card.resx">
+      <DependentUpon>Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardGenerate.resx">
+      <DependentUpon>CardGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSearch.resx">
+      <DependentUpon>CardSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSearchResults.resx">
+      <DependentUpon>CardSearchResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardStatusDialog.resx">
+      <DependentUpon>CardStatusDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogView.resx">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsSearchResult.resx">
+      <DependentUpon>OperationsSearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformOperation.resx">
+      <DependentUpon>PerformOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
