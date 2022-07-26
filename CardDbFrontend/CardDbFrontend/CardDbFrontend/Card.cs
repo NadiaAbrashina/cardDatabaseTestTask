@@ -34,6 +34,7 @@ namespace CardDbFrontend
         private void History_Click(object sender, EventArgs e)
         {
             OperationsSearchResult operationsSearchResult = new OperationsSearchResult(cardSelected.pk);
+            this.Hide();
             operationsSearchResult.ShowDialog();
         }
 
@@ -42,6 +43,7 @@ namespace CardDbFrontend
             if (cardSelected.status == CardStatus.ACTIVE)
             {
                 PerformOperation performOperation = new PerformOperation(cardSelected.pk);
+                this.Hide();
                 performOperation.ShowDialog();
             }
             else
@@ -77,12 +79,14 @@ namespace CardDbFrontend
                         MessageBox.Show(ex.Message,"Server error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                this.Hide();
             }
         }
 
         private void ChangeCard_Click(object sender, EventArgs e)
         {
             CardStatusDialog cardStatus = new CardStatusDialog(cardSelected);
+            this.Hide();
             cardStatus.ShowDialog();
         }
     }

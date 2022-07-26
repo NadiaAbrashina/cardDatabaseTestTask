@@ -67,7 +67,11 @@ namespace CardDbFrontend
         {
             CardObject cardSelected = data[e.RowIndex];
             Card card = new Card(cardSelected);
+            this.Hide();
             card.ShowDialog();
+            this.Show();
+            this.Invalidate();
+            this.Update();
         }
     }
 }
